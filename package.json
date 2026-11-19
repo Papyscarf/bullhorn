@@ -1,0 +1,30 @@
+{
+  "name": "bullhorn_32boy",
+  "main": "main.js",
+  "productName": "Bullhorn Boy",
+  "description": "Bullhorn Boy",
+  "author": "",
+  "version": "1.0.0",
+  "dependencies": {
+    
+    "@electron/remote": "2.1.2"
+  },
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "45.2.3",
+    "electron-builder": "26.4.0"
+  },
+  "build": {
+    "appId": "com.example.gamename",
+    "extraFiles": [
+      "LICENSE.GDevelop.txt"
+    ],
+    "directories": {
+      "buildResources": "buildResources"
+    }
+  }
+}
